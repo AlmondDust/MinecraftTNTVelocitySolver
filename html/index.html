@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=¨stylesheet¨ type=¨text/css¨ href=¨../stylesheet/style.css¨>
+    <title>WIP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../data/EntitySizes.js"></script>
+    <script type="text/javascript" src="../javascript/data.js"></script>
+    <script type="text/javascript" src="../javascript/logic.js"></script>
+</head>
+<body>
+    <form id="entered parameters">
+        <fieldset>
+            <legend>TNT Information</legend>
+            <label for="numTnt"># of TNT:</label>
+            <input type="number" id="numTnt" name="numTnt">
+            <br>
+            <label for="tntCoords">Explosion Center:</label>
+            <div id="tntCoords">
+                <label for="X">X:</label>
+                <input type="number" id="X" name="X" value=0.5>
+                <label for="Y">Y:</label>
+                <input type="number" id="Y" name="Y" value=0>
+                <label for="Z">Z:</label>
+                <input type="number" id="Z" name="Z" value=0.5>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Launched Entity Information</legend>
+            <label for="entityType">Entity Type:</label>
+            <select name="entityType" id="entityType">
+            </select>
+            <div id="entityDimensions">
+                <label for="height">Height:</label>
+                <input type="number" id="height" name="height">
+                <label for="width">Width:</label>
+                <input type="number" id="width" name="width">
+            </div>
+            <label for="entityCoords">Entity Pos:</label>
+            <div id="entityCoords">
+                <label for="X">X:</label>
+                <input type="number" id="X" name="X" value=0.5>
+                <label for="Y">Y:</label>
+                <input type="number" id="Y" name="Y" value=2>
+                <label for="Z">Z:</label>
+                <input type="number" id="Z" name="Z"value=0.5>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Change Blocks</legend>
+            <button>+X</button><button>-X</button><br>
+            <button>+Y</button><button>-Y</button><br>
+            <button>+Z</button><button>-Z</button><br>
+            <Button>Place</Button><button>Remove</button>
+        </fieldset>
+    </form>
+    <canvas id="visualization" width="640" height="480"></canvas>
+
+    <div id="credits">
+        Entity and Blocksizes: RaysWorks <a href="https://docs.google.com/spreadsheets/d/18_m_ylcYiE_gmxKCBgpu-qkj767kfn_T88hS4GdTqh0/edit#gid=581771397">Here</a>
+    </div>
+</body>
+</html>

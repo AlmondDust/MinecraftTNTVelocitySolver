@@ -11,11 +11,9 @@
     <script type="text/javascript" src="../javascript/logic.js"></script>
 </head>
 <body>
-    <p>WIP</p>
-
     <form id="entered parameters">
-        <label for="tnt data">TNT Information:</label>
-        <div id="tnt data">
+        <fieldset>
+            <legend>TNT Information</legend>
             <label for="numTnt"># of TNT:</label>
             <input type="number" id="numTnt" name="numTnt">
             <br>
@@ -28,9 +26,9 @@
                 <label for="Z">Z:</label>
                 <input type="number" id="Z" name="Z" value=0.5>
             </div>
-        </div>
-        <label for="entity data">Entity Information:</label>
-        <div id="entity data">
+        </fieldset>
+        <fieldset>
+            <legend>Launched Entity Information</legend>
             <label for="entityType">Entity Type:</label>
             <select name="entityType" id="entityType">
             </select>
@@ -49,7 +47,14 @@
                 <label for="Z">Z:</label>
                 <input type="number" id="Z" name="Z"value=0.5>
             </div>
-        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Change Blocks</legend>
+            <button>+X</button><button>-X</button><br>
+            <button>+Y</button><button>-Y</button><br>
+            <button>+Z</button><button>-Z</button><br>
+            <Button>Place</Button><button>Remove</button>
+        </fieldset>
     </form>
     <canvas id="visualization" width="640" height="480"></canvas>
 
